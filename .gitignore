@@ -27,6 +27,7 @@ tmp/
 # Project-specific files
 history.txt
 digest.txt
+gitoutput-*.txt
 
 # Environment variables
 .env
@@ -34,3 +35,4 @@ digest.txt
 # Local agent tooling state (gm-plugkit)
 .gm/
 .gm/pw-sock-*/
+.agentplug-kv/

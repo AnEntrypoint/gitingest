@@ -11,7 +11,7 @@ permissions:
 jobs:
   label-rebase-needed:
     runs-on: ubuntu-latest
-    if: github.repository == 'AnEntrypoint/gitingest'
+    if: github.repository == 'AnEntrypoint/gitoutput'
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}

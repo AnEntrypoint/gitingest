@@ -4,6 +4,13 @@
 
 ### Features
 
+* **output:** default output is now chunked files (`<gitprojectname>-1.txt`,
+  `-2.txt`, ..., 80,000 characters each) written to the current directory
+  instead of printing to `STDOUT`. Chunk 1 holds the summary plus an
+  [mcp-thorns](https://www.npmjs.com/package/mcp-thorns) codebase report;
+  later chunks hold the directory tree and file contents. Pass `--output/-o -`
+  to print a single digest to `STDOUT` instead, as before.
+
 * **submodules:** included by default. GitHub submodules are resolved
   recursively via the zipball fast path (each submodule's pinned commit is
   looked up through the GitHub Contents API, then fetched as its own
@@ -19,9 +26,8 @@
 * **rewrite:** the tool is now a Node.js CLI, published to npm as `gitoutput`. The
   Python implementation (FastAPI web server, self-hosting support, browser
   extension backend, and the `gitingest` PyPI package) has been fully retired and
-  replaced with a Node.js port. The `gitoutput` command prints its digest directly
-  to `STDOUT` by default in one shot; pass `--output/-o <file>` to write to a file
-  instead.
+  replaced with a Node.js port. The `gitoutput` command writes its digest to
+  chunked files by default; pass `--output/-o -` to print to `STDOUT` instead.
 * **package name:** published to npm as `gitoutput`, not `gitingest` -- npm rejected
   `gitingest` as too similar to an existing unrelated package (`git-ingest`), and
   `gitmd`/`gitout` were both already taken by unrelated packages.

@@ -1,6 +1,6 @@
-# Contributing to Gitingest
+# Contributing to Gitoutput
 
-Thanks for your interest in contributing to **Gitingest** 🚀 Our goal is to keep the codebase friendly to first-time
+Thanks for your interest in contributing to **Gitoutput** 🚀 Our goal is to keep the codebase friendly to first-time
 contributors.
 
 ---
@@ -8,9 +8,9 @@ contributors.
 ## How to Contribute (non-technical)
 
 - **Create an Issue** – found a bug or have a feature idea?
-  [Open an issue](https://github.com/AnEntrypoint/gitingest/issues/new).
+  [Open an issue](https://github.com/AnEntrypoint/gitoutput/issues/new).
 - **Spread the Word** – tweet, blog, or tell a friend.
-- **Use Gitingest** – real-world usage gives the best feedback. File issues with anything you notice.
+- **Use Gitoutput** – real-world usage gives the best feedback. File issues with anything you notice.
 
 ---
 
@@ -23,8 +23,8 @@ contributors.
 2. **Clone** your fork:
 
    ```bash
-   git clone https://github.com/AnEntrypoint/gitingest.git
-   cd gitingest
+   git clone https://github.com/AnEntrypoint/gitoutput.git
+   cd gitoutput
    ```
 
 3. **Set up the dev environment**:
